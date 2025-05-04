@@ -46,10 +46,8 @@ const decimalToRoman = (number) => {
     }
 }
 
-const converter = () => {
-    const number = parsing();
-
-    decimalToRoman(number);
+const convert = () => {
+    decimalToRoman(parsing());
 }
 
-convertBtn.addEventListener("click", converter);
+convertBtn.addEventListener("click", convert);
