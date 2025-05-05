@@ -19,9 +19,9 @@ const convertTable = [
 ]
 
 const parsing = () => {
-    const number = parseInt(input.value);
+    const number = Number(input.value);
 
-    if (!input.value || isNaN(input.value)) {
+    if (!input.value || isNaN(input.value) || Math.floor(number) != number) {
         output.innerText = "Please enter a valid number";
         return NaN;
     }
