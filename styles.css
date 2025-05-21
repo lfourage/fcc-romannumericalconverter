@@ -1,29 +1,56 @@
+:root {
+  --roman-red-light: hsl(0, 67%, 49%);
+  --roman-red-dark: hsl(359, 59%, 31%);
+  --roman-marble-light: hsl(36, 100%, 95%);
+  --roman-marble-medium: hsl(47, 47%, 81%);
+  --roman-marble-dark: hsl(49, 32%, 69%);
+  --roman-gold: hsl(48, 96%, 55%);
+}
+
 body {
-    background-color: darkgray;
-    overflow: hidden;
-    margin-top: 40vh;
-    display: flex;
-    justify-content: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fleonardo-express.com%2Fwp-content%2Fuploads%2F2017%2F01%2Fshutterstock_789412159.jpg&f=1&nofb=1&ipt=27bb418569773d48e9c18ae4034b84c40df8cbd3391d38aa7ce473708747f5bb);
+  text-shadow: 1.5px 1.5px var(--roman-red-dark),
+    -1.5px 1.5px var(--roman-red-dark), -1.5px -1.5px var(--roman-red-dark),
+    1.5px -1.5px var(--roman-red-dark);
+  color: var(--roman-gold);
+  overflow: hidden;
+  margin-top: 20em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 #rnc-wrap {
-    background-color: gray;
-    width: 500px;
-    height: 200px;
-    border: 1px solid black;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  background-color: var(--roman-red-light);
+  width: 500px;
+  min-height: 200px;
+  border: 5px solid var(--roman-gold);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#rnc-wrap > * {
-    width: 80%;
+input {
+  margin-bottom: 1.5em;
+  background-color: var(--roman-marble-light);
+  box-shadow: 1.5px 1.5px var(--roman-gold), -1.5px 1.5px var(--roman-gold),
+    -1.5px -1.5px var(--roman-gold), 1.5px -1.5px var(--roman-gold);
+}
+
+button {
+  background-color: var(--roman-marble-medium);
+  box-shadow: 1.5px 1.5px var(--roman-gold), -1.5px 1.5px var(--roman-gold),
+    -1.5px -1.5px var(--roman-gold), 1.5px -1.5px var(--roman-gold);
+  color: var(--roman-red-dark);
+}
+
+button:hover {
+  background-color: var(--roman-marble-dark);
 }
 
 #output {
-    text-align: center;
-    background-color: antiquewhite;
-    padding: auto;
+  font-size: 2em;
+  padding: auto;
 }
