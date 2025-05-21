@@ -51,3 +51,4 @@ const convert = () => {
 }
 
 convertBtn.addEventListener("click", convert);
+input.addEventListener("keydown", (e) => { if (e.key === "Enter") convert(); });
